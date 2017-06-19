@@ -1,0 +1,151 @@
+*, html, body {
+    font-family: 'Pavanam', sans-serif !important;
+    font-size: calc(10px + 1vw);
+    line-height: 2.0em;
+}
+
+h1, h3, h4, p, ul, li {
+    color: $brand-dark-grey;
+}
+
+a {
+    color: inherit;
+    font-weight: inherit;
+    display: inline-block;
+    color: $brand-dark-grey;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    margin:0 0 $base-spacing-unit 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin:0;
+    margin-bottom: $base-spacing-unit--tiny;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: $base-spacing-unit--teeny;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-family:sans-serif;
+    margin-bottom: $base-spacing-unit--teeny;
+
+}
+
+li {
+    font-size: 1.1rem;
+}
+
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}

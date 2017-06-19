@@ -1,0 +1,60 @@
+.c-portfolio {
+    margin: 0;
+    display: block;
+    border-top : 5px solid white;
+    padding: $base-spacing-unit 0;
+
+    width: 100%;
+
+    @include breakpoint (lg) {
+        display: table;
+        padding: $base-spacing-unit--massive 0;
+    }
+
+    &:last-child {
+        border-bottom : 5px solid white;
+    }
+}
+
+.c-portfolio_img-sq,
+.c-portfolio_body-sq {
+    display: block;
+
+    @include breakpoint (lg) {
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+}
+
+.c-portfolio_img-sq {
+    margin-bottom: 30px;
+    width: 100%;
+    img {
+        max-height: 250px;
+        margin-top: 10px;
+    }
+
+    @include breakpoint (lg) {
+        margin: 0;
+        padding-right: $base-spacing-unit;
+        width:33%;
+        text-align: center;
+    }
+}
+
+
+.c-portfolio_body-sq {
+    width: 100%;
+
+    @include breakpoint (lg) {
+        width: 66%;
+        vertical-align: top;
+    }
+}
+
+.c-portfolio_body-sq-col {
+    @include breakpoint(sm) {
+        width: 50%;
+    }
+}

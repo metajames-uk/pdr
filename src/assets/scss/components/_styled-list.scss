@@ -1,0 +1,27 @@
+.c-styled-list {
+    margin-bottom: $base-spacing-unit;
+    li {
+        margin-bottom: $base-spacing-unit--small;
+    }
+}
+
+.c-styled-list--numbered {
+    counter-reset: number-list;
+    list-style: none;
+
+    li {
+        counter-increment: number-list;
+        &:before {
+            content: counter(number-list);
+            border-radius: 100%;
+            border: 2px solid $brand-blue;
+            color: $brand-blue;
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+            display: inline-block;
+            text-align: center;
+            margin-right: $base-spacing-unit
+        }
+    }
+}

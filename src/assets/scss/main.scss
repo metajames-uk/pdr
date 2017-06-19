@@ -1,0 +1,31 @@
+// tools
+@import 'tools/reset',
+        'tools/mixins';
+
+//settings
+@import 'settings/color',
+        'settings/grid',
+        'settings/spacing',
+        'settings/type',
+        'settings/images';
+
+
+// objects
+@import 'objects/layout';
+
+// components
+@import 'components/nav',
+        'components/hero',
+        'components/footer',
+        'components/skills-list',
+        'components/portfolio',
+        'components/accordion',
+        'components/styled-list',
+        'components/button';
+
+// utility
+@import 'utility/grid',
+        'utility/spacing',
+        'utility/colours',
+        'utility/type',
+        'utility/position';
