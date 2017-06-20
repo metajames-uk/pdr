@@ -1,6 +1,10 @@
 .c-footer {
     font-weight: bold;
     text-align: center;
+
+    p {
+        font-size: 0.7rem;
+    }
 }
 
 .c-footer_links {
@@ -20,10 +24,6 @@
         }
     }
 
-}
-
-.c-footer_copyright-line {
-    font-size: 14px;
 }
 
 .c-footer_sm-icon {

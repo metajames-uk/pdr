@@ -21,6 +21,13 @@ Accordian styles
     }
 }
 
+.c-accordion_chevron {
+       float: right;
+       content: url('./assets/img/chevron-right.png');
+       height: 30px;
+       width: 30px;
+}
+
 
 .c-accordion_body {
     overflow: hidden;
