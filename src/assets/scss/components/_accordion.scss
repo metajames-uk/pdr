@@ -1,44 +1,44 @@
+/* -----------------
+Accordian styles
+------------------ */
+
 .c-accordion {
-    input {
-        display: none;
-        &:checked + label {
-            background: #ccc;
-        	border-bottom-right-radius: 0;
-        	border-bottom-left-radius: 0;
-        	color: white;
-        	margin-bottom: 0;
-        }
-    }
+  margin-bottom: $base-spacing-unit--tiny;
 
     label {
-        background: #eee;
-    	border-radius: .25em;
-    	cursor: pointer;
-    	display: block;
-    	margin-bottom: .125em;
-    	padding: .25em 1em;
-    	z-index: 20;
-
-        &:hover {
-            background: #ccc;
-        }
+        cursor: pointer;
+        display: block;
+        padding: 10px 15px;
+        background-color: $brand-light-grey;
+        font-size: 1rem;
     }
 
-    article {
-        background: #f7f7f7;
-        height:0px;
-        overflow:hidden;
-        z-index:10;
-
-        p {
-            padding: 1em;
-        }
-
-        &:checked ~ article {
-            border-bottom-left-radius: .25em;
-        	border-bottom-right-radius: .25em;
-        	height: auto;
-        	margin-bottom: .125em;
-        }
+    input {
+        position: relative;
+        top: -2px;
+        left: -3px;
+        display: none;
     }
+}
+
+
+.c-accordion_body {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    width: 100%;
+
+    @include breakpoint(md) {
+        width: 66%;
+    }
+}
+
+.c-accordion input:checked ~ .c-accordion_body {
+    height: auto;
+    opacity: 1;
+}
+
+.c-accordion_inner {
+  padding: 10px $base-spacing-unit--tiny 0;
 }

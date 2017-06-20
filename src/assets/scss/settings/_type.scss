@@ -1,7 +1,18 @@
 *, html, body {
-    font-family: 'Pavanam', sans-serif !important;
-    font-size: calc(10px + 1vw);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
     line-height: 2.0em;
+}
+
+@include breakpoint (sm) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@include breakpoint (lg) {
+  html {
+    font-size: 20px;
+  }
 }
 
 h1, h3, h4, p, ul, li {
@@ -13,6 +24,7 @@ a {
     font-weight: inherit;
     display: inline-block;
     color: $brand-dark-grey;
+    text-decoration: underline;
 
     &:hover {
         text-decoration: underline;
@@ -40,13 +52,14 @@ h4 {
 }
 
 p {
+    font-size: 1rem;
     font-family:sans-serif;
     margin-bottom: $base-spacing-unit--teeny;
 
 }
 
 li {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 

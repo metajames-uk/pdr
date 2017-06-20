@@ -1,5 +1,5 @@
-$color-names: brand-blue brand-dark-grey brand-light-grey brand-white brand-black brand-green;
-$color-var: $brand-blue $brand-dark-grey $brand-light-grey $brand-white $brand-black $brand-green;
+$color-names: brand-blue brand-dark-grey brand-light-grey brand-white brand-black brand-green brand-light-blue;
+$color-var: $brand-blue $brand-dark-grey $brand-light-grey $brand-white $brand-black $brand-green $brand-light-blue;
 
 @each $name in $color-names {
   $i: index($color-names, $name);

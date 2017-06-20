@@ -11,17 +11,29 @@
 
     li {
         counter-increment: number-list;
+        position: relative;
+        margin-bottom: 40px;
+        padding-left: 50px;
+
         &:before {
             content: counter(number-list);
-            border-radius: 100%;
-            border: 2px solid $brand-blue;
-            color: $brand-blue;
-            width: 35px;
-            height: 35px;
-            font-size: 16px;
-            display: inline-block;
+            color: $brand-light-blue;
+            font-size: 30px;
             text-align: center;
-            margin-right: $base-spacing-unit
+            margin-right: $base-spacing-unit;
+            position: absolute;
+            left: 0;
+        }
+        &:after {
+            content: '';
+            border: 2px solid $brand-light-blue;
+            border-radius: 100%;
+            width: 45px;
+            height: 45px;
+            display: inline-block;
+            position: absolute;
+            top: -9px;
+            left: -17px;
         }
     }
 }

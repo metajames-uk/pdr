@@ -14,14 +14,13 @@
 @import 'objects/layout';
 
 // components
-@import 'components/nav',
-        'components/hero',
-        'components/footer',
-        'components/skills-list',
-        'components/portfolio',
+@import 'components/footer',
         'components/accordion',
         'components/styled-list',
-        'components/button';
+        'components/button',
+        'components/header',
+        'components/bubble-img',
+        'components/testimonial';
 
 // utility
 @import 'utility/grid',

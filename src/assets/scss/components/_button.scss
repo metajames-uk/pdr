@@ -1,9 +1,16 @@
 .c-btn {
     display: inline-block;
     padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.1rem;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .c-btn--black {
     background-color: $brand-black;
     color: $brand-white;
+    border: 1px solid white;
 }

@@ -1,0 +1,16 @@
+.c-bubble-img {
+    display: table;
+}
+
+.c-bubble-img_img {
+    display:table-cell;
+    vertical-align: middle;
+    img {
+        margin-right: 20px
+    }
+}
+
+.c-bubble-img_body {
+    display:table-cell;
+    vertical-align: middle;
+}

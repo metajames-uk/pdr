@@ -1,0 +1,101 @@
+.c-header_logo {
+    width: 250px;
+}
+
+.c-header_nav {
+  width: 100%;
+
+  ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    li {
+        a {
+            display: block;
+            text-align: right;
+            padding: 20px 0px 0px 0px;
+            text-decoration: none;
+            color: $brand-white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.c-header_nav-menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.c-header_nav-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    position: relative;
+    user-select: none;
+    color: $brand-white;
+
+    i {
+        font-size: 47px;
+    }
+
+    span {
+        display: block;
+        line-height: 0.5em;
+    }
+}
+
+.c-header_nav-btn {
+  display: none;
+}
+
+.c-header_nav .c-header_nav-btn:checked ~ .c-header_nav-menu {
+  max-height: 240px;
+}
+
+.c-header_nav .c-header_nav-btn:checked ~ .c-header_nav-icon .navicon {
+  background: transparent;
+}
+
+.c-header_nav .c-header_nav-btn:checked ~ .c-header_nav-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.c-header_nav .c-header_nav-btn:checked ~ .c-header_nav-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.c-header_nav .c-header_nav-btn:checked ~ .c-header_nav-icon:not(.steps) .navicon:before,
+.c-header_nav .c-header_nav-btn:checked ~ .c-header_nav-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@include breakpoint(lg) {
+  .c-header_nav {
+      li {
+          float: left;
+          a {
+              padding: 10px 20px;
+              &:last-of-type {
+                  padding: 10px 0px 10px 20px;
+              }
+          }
+      }
+  }
+
+    .c-header_nav-menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .c-header_nav-icon {
+        display: none;
+    }
+}

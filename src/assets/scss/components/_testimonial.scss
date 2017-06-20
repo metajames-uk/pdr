@@ -1,0 +1,62 @@
+.c-testimonial {
+    display: table;
+    border-radius: 5px;
+    background: $brand-white;
+    width: 100%;
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+.c-testimonial_img {
+    vertical-align: top;
+    display: table-cell;
+    min-width: 70px;
+
+    img {
+        border-radius: 100%;
+        border: 1px solid $brand-light-grey;
+        width: 60px;
+    }
+
+}
+
+.c-testimonial_body {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 15px;
+    h3 {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 14px;
+
+        @include breakpoint (md) {
+            font-size: 16px;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        clear:both;
+
+        @include breakpoint (md) {
+            font-size: 16px;
+        }
+    }
+}
+
+.c-testimonial_stars {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    img {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-color: $trust-pilot-star;
+
+        @include breakpoint (md) {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

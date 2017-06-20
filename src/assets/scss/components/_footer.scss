@@ -1,45 +1,32 @@
 .c-footer {
-    padding-top: 20px;
-    color: $brand-light-grey;
-    text-align: left;
+    font-weight: bold;
+    text-align: center;
 }
 
-.c-footer_list {
-    div{
-        display: block;
-        padding: 0 0 10px 0;
-        list-style: none;
-        margin-left: 0;
-        @include breakpoint(md) {
-            display: inline-block;
-        }
+.c-footer_links {
+    list-style: none;
+    margin-bottom: $base-spacing-unit;
 
-        li {
-            padding-bottom: 10px;
-            @include breakpoint(md) {
-                display: inline-block;
-                padding: 0 20px 0 0;
+    li {
+        font-size: 14px;
+        padding: 0 5px;
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
             }
-
         }
     }
 
 }
 
-.c-footer_list-contact {
-    ul {
-        margin: 0;
-        list-style: none;
-    }
-    @include breakpoint(md) {
-        width: 66%;
-    }
+.c-footer_copyright-line {
+    font-size: 14px;
 }
 
-.c-footer_list-copyright {
-    @include breakpoint(md) {
-        width: 33%;
-        text-align: right;
-        float: right;
-    }
+.c-footer_sm-icon {
+    font-size: 30px;
+    padding: $base-spacing-unit--tiny $base-spacing-unit--teeny;
 }
