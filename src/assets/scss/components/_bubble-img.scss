@@ -3,14 +3,14 @@
 }
 
 .c-bubble-img_img {
-    display:table-cell;
+    display: table-cell;
     vertical-align: middle;
     img {
-        margin-right: 20px
+        margin-right: $base-spacing-unit--small;
     }
 }
 
 .c-bubble-img_body {
-    display:table-cell;
+    display: table-cell;
     vertical-align: middle;
 }

@@ -1,3 +1,6 @@
+$testimonial-stars-sm:    10px;
+$testimonial-stars-lg:    15px;
+
 .c-testimonial {
     display: table;
     border-radius: 5px;
@@ -49,14 +52,14 @@
     display: inline-block;
     float: right;
     img {
-        width: 10px;
-        height: 10px;
+        width: $testimonial-stars-sm;
+        height: $testimonial-stars-sm;
         display: inline-block;
         background-color: $trust-pilot-star;
 
         @include breakpoint (md) {
-            width: 15px;
-            height: 15px;
+            width: $testimonial-stars-lg;
+            height: $testimonial-stars-lg;
         }
     }
 }

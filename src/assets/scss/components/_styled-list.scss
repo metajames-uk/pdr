@@ -1,3 +1,5 @@
+$styled-list-circle-size:    45px;
+
 .c-styled-list {
     margin-bottom: $base-spacing-unit;
     li {
@@ -12,13 +14,13 @@
     li {
         counter-increment: number-list;
         position: relative;
-        margin-bottom: 40px;
-        padding-left: 50px;
+        margin-bottom: $base-spacing-unit--large;
+        padding-left: $base-spacing-unit--huge;
 
         &:before {
             content: counter(number-list);
             color: $brand-light-blue;
-            font-size: 30px;
+            font-size: $base-spacing-unit;
             text-align: center;
             margin-right: $base-spacing-unit;
             position: absolute;
@@ -28,8 +30,8 @@
             content: '';
             border: 2px solid $brand-light-blue;
             border-radius: 100%;
-            width: 45px;
-            height: 45px;
+            width: $styled-list-circle-size;
+            height: $styled-list-circle-size;
             display: inline-block;
             position: absolute;
             top: -9px;

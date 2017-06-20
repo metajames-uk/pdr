@@ -8,7 +8,7 @@ Accordian styles
     label {
         cursor: pointer;
         display: block;
-        padding: 10px 15px;
+        padding: $base-spacing-unit--teeny $base-spacing-unit--tiny;
         background-color: $brand-light-grey;
         font-size: 1rem;
     }
@@ -40,5 +40,5 @@ Accordian styles
 }
 
 .c-accordion_inner {
-  padding: 10px $base-spacing-unit--tiny 0;
+  padding: $base-spacing-unit--teeny $base-spacing-unit--tiny 0;
 }
