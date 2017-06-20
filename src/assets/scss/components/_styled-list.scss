@@ -25,6 +25,7 @@ $styled-list-circle-size:    45px;
             margin-right: $base-spacing-unit;
             position: absolute;
             left: 0;
+            top: 2px;
         }
         &:after {
             content: '';

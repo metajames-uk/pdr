@@ -11,6 +11,16 @@ Accordian styles
         padding: $base-spacing-unit--teeny $base-spacing-unit--tiny;
         background-color: $brand-light-grey;
         font-size: 1rem;
+
+        .c-accordion_chevron {
+            float:right;
+            width: 30px;
+        }
+
+        .c-accordion_chevron-down {
+            display:none;
+        }
+
     }
 
     input {
@@ -19,13 +29,6 @@ Accordian styles
         left: -3px;
         display: none;
     }
-}
-
-.c-accordion_chevron {
-       float: right;
-       content: url('./assets/img/chevron-right.png');
-       height: 30px;
-       width: 30px;
 }
 
 
@@ -44,6 +47,16 @@ Accordian styles
 .c-accordion input:checked ~ .c-accordion_body {
     height: auto;
     opacity: 1;
+}
+
+.c-accordion input:checked ~ label {
+    .c-accordion_chevron-right {
+        display: none;
+    }
+
+    .c-accordion_chevron-down {
+        display: inline-block;
+    }
 }
 
 .c-accordion_inner {
